@@ -45,7 +45,8 @@
                     </div>
                 </div>
                 <div id="clock-box">
-                    <a href="http://blog.csdn.net/wuxia2001" target="_blank">@wuxia2001</a> 与 <a href="http://blog.csdn.net/wuxia2001" target="_blank">@月亮女</a> 在一起的
+                    <a href="http://blog.csdn.net/wuxia2001" target="_blank">@alanfray(飞)</a> 与
+                    <a href="http://blog.csdn.net/wuxia2001" target="_blank">@柒七</a> 在一起的
                         <div id="clock"></div>
                 </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
@@ -186,13 +187,15 @@
         }));
 
         var textAnimate = eval(Jscex.compile("async", function () {
+            debugger
             var together = new Date();
-            together.setFullYear(2010, 5, 8);
-            together.setHours(20);
-            together.setMinutes(20);
+            console.log(together);
+            together.setFullYear(2018, 5, 21);
+            together.setHours(21);
+            together.setMinutes(6);
             together.setSeconds(0);
             together.setMilliseconds(0);
-
+            console.log(together);
             $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
             while (true) {
